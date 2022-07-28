@@ -1,0 +1,22 @@
+/*2. Write a function to calculate simple interest. (TSRS)*/
+#include<stdio.h>
+float interest(float p ,float r,float t);
+int main()
+{
+    float principal;
+    float time;
+    float rate ;
+    printf("Enter Principal :");
+    scanf("%f",&principal);
+    printf("Enter time period :");
+    scanf("%f",&time);
+    printf("Enter rate of interest :");
+    scanf("%f",&rate);
+    printf("Your simple interst is %.2f",interest(principal,rate,time)/100);
+    return 0;
+}
+float interest(float p,float r,float t){
+    float si=0;
+    si=p*r*t;
+    return si;
+}
