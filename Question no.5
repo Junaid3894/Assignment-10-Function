@@ -1,0 +1,20 @@
+/*5. Write a function to print first N odd natural numbers. (TSRN)*/
+#include<stdio.h>
+int natural(int n); // function prototype or function decleration  
+int main()
+{
+int n,k;
+printf("Enter the number :");// input how many odd natural numbers you want to see,from user
+scanf("%d",&n);
+natural(n); // function calling
+
+return 0;
+}
+int natural(int n){
+// start loop counter from 1 and increment it by 1, and print in each iteration 
+    for(int i=1;i<=n;i++){
+        if(i%2){// check odd condition before printing
+        printf("%d\n",i);
+        }
+    }
+}
