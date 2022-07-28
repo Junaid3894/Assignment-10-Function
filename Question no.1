@@ -1,0 +1,19 @@
+/*1. Write a function to calculate the area of a circle. (TSRS)*/
+
+#include<stdio.h>
+float circle(float radius);// Fuction Prototype
+int main()
+{
+float r;
+// Input from user
+printf("Enter the radius of a circle :");
+scanf("%f",&r);
+printf("Area of circle is %.2f ",circle(r)); printing the output of function calling
+return 0;
+}
+float circle(float radius){ //Fuction defination 
+    float pie=3.14;
+    float area;
+    area=pie*(radius*radius);
+    return area;
+}
