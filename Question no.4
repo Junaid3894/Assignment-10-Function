@@ -1,6 +1,6 @@
 /* 4.Write a function to print first N natural numbers (TSRN) */
 #include<stdio.h>
-int natural(int n);
+void natural(int n);
 int main()
 {
 int n,k;
@@ -10,7 +10,7 @@ natural(n); // function calling
 
 return 0;
 }
-int natural(int n){
+void natural(int n){
 // start loop counter from 1 and increment it by 1, and print in each iteration 
     for(int i=1;i<=n;i++){
         printf("%d\n",i);
